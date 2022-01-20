@@ -1,0 +1,31 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:500,600,700&display=swap);
+@import "variables.scss";
+@import "nullstyles.scss";
+@import "mixins.scss";
+
+body {
+    margin: 0 auto;
+    position: relative;
+    min-width: 320px;
+    max-width: 1920px;
+    font-family: '', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 18px;
+    font-weight: 500;
+    color: black;
+    background-color: #fff;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
