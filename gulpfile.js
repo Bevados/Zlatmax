@@ -43,7 +43,7 @@ function watcher () {
 export {svgSprite};
 
 //Основные задачи параллельного выполнения
-const mainTasks = gulp.parallel(copy, html, scss, js, images);
+const mainTasks = gulp.series(svgSprite, gulp.parallel(copy, html, scss, js, images));
 
 //Построение сценариев выполнения задач: в режиме разработчика, продакшн, архивирования
 //метод series выполняет задачи последовательно
