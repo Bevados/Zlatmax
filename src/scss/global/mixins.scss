@@ -1,5 +1,5 @@
 //Адаптивный шрифт
-$maxWidth: 1280;
+$maxWidth: 1920;
 
 @mixin adaptiv-font($pcSize, $mobSize) {
   $addSize: $pcSize - $mobSize; //добавочное число
@@ -15,27 +15,27 @@ $maxWidth: 1280;
 // $minSize - минимальное значение свойства
 // $type - тип, больше или меньше контейнера
 
-$maxWidth: 1500; // макс ширина полотна;
-$maxWidthContainer: 1000; // макс ширина ограничивающего контейнера;
+// $maxWidth: 1920; // макс ширина полотна;
+// $maxWidthContainer: 1584; // макс ширина ограничивающего контейнера;
 
-@mixin adaptiv-value($property, $maxSize, $minSize, $type) {
-  $addSize: $maxSize - $minSize; //добавочное число
-  @if $type==1 {
-    //Только если меньше контейнера
-    #{$property}: $maxSize + px;
-    @media (max-width: #{$maxWidthContainer + px}) {
-      #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidthContainer - 320}));
-    }
-  }  @else if $type==2 {
-    //Только если больше контейнера
-    #{$property}: $maxSize + px;
-    @media (min-width: #{$maxWidthContainer + px}) {
-      #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}));
-    }
-  } @else {
-    #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}));
-  }
-}
+// @mixin adaptiv-value($property, $maxSize, $minSize, $type) {
+//   $addSize: $maxSize - $minSize; //добавочное число
+//   @if $type==1 {
+//     //Только если меньше контейнера
+//     #{$property}: $maxSize + px;
+//     @media (max-width: #{$maxWidthContainer + px}) {
+//       #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidthContainer - 320}));
+//     }
+//   }  @else if $type==2 {
+//     //Только если больше контейнера
+//     #{$property}: $maxSize + px;
+//     @media (min-width: #{$maxWidthContainer + px}) {
+//       #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}));
+//     }
+//   } @else {
+//     #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}));
+//   }
+// }
 
 //Подключение
 // .elem {
@@ -67,20 +67,20 @@ $maxWidthContainer: 1000; // макс ширина ограничивающег�
 //=================================================================//
 
 // Адаптивное свойство с определённым диапазоном ширины
-//$property - имя свойства
-//$maxSize - максимальное значение свойства
-//$minSize - минимальное значение свойства
-//$maxWidth - максимальная ширина для свойства
-//$minWidth - минимальная ширина для свойства
+// $property - имя свойства
+// $maxSize - максимальное значение свойства
+// $minSize - минимальное значение свойства
+// $maxWidth - максимальная ширина для свойства
+// $minWidth - минимальная ширина для свойства
 
-// @mixin adaptiv-value($property, $maxSize, $minSize, $maxWidth, $minWidth) {
-//   $addSize: $maxSize - $minSize; //добавочное число
-//   $rangeWidth: $maxWidth - $minWidth; //диапазон ширины сайта (макс. указанная ширина минус мин. указанная ширина;)
-//   #{$property}: $maxSize + px;
-//   @media (max-width: #{$maxWidth + px}) {
-//     #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - #{$minWidth + px}) / #{$rangeWidth}));
-//   }
-// }
+@mixin adaptiv-value($property, $maxSize, $minSize, $maxWidth, $minWidth) {
+  $addSize: $maxSize - $minSize; //добавочное число
+  $rangeWidth: $maxWidth - $minWidth; //диапазон ширины сайта (макс. указанная ширина минус мин. указанная ширина;)
+  #{$property}: $maxSize + px;
+  @media (max-width: #{$maxWidth + px}) {
+    #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - #{$minWidth + px}) / #{$rangeWidth}));
+  }
+}
 
-//Подключение
-//@include adaptiv-value(padding, 80, 10, 900, 500);
+// Подключение
+// @include adaptiv-value(padding, 80, 10, 900, 500);

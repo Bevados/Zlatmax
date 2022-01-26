@@ -27,7 +27,6 @@ import {server} from "./gulp/tasks/server.js";
 import {scss} from "./gulp/tasks/scss.js";
 import {js} from "./gulp/tasks/js.js";
 import {images} from "./gulp/tasks/images.js";
-import {svgSprite} from "./gulp/tasks/svgSprite.js";
 import {zip} from "./gulp/tasks/zip.js";
 
 //Наблюдатель за изменениями в файлах
@@ -39,11 +38,8 @@ function watcher () {
    gulp.watch(path.watch.images, images);
 }
 
-//Экспортирием команду создания svg спрайта, так как она нужна будет скорее всего один раз, поэтому запускаться будет отдельной командой
-export {svgSprite};
-
 //Основные задачи параллельного выполнения
-const mainTasks = gulp.series(svgSprite, gulp.parallel(copy, html, scss, js, images));
+const mainTasks = gulp.parallel(copy, html, scss, js, images);
 
 //Построение сценариев выполнения задач: в режиме разработчика, продакшн, архивирования
 //метод series выполняет задачи последовательно

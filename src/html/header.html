@@ -1,115 +1,139 @@
 <header>
-   <div class="header__head-wrap">
-      <div class="header__head">
-         <nav class="header__nav nav">
-            <ul class="nav__list">
-               <li class="nav__item">
-                  <a class="nav__url" href="about.html">О нас</a>
-               </li>
-               <li class="nav__item">
-                  <a class="nav__url" href="delivery.html">Оплата и доставка</a>
-               </li>
-               <li class="nav__item">
-                  <a class="nav__url" href="news.html">Новости</a>
-               </li>
-               <li class="nav__item">
-                  <a class="nav__url" href="contacts.html">Контакты</a>
-               </li>
-            </ul>
-         </nav>
-         <div class="header__personal">
-            <a class="header__personal-link" href="personal.html">
-               <img class="header__personal-icon" width="23" height="28" src="@img/icons/icons.svg#personal"/>
-               <p class="header__personal-text">Личный кабинет</p>
-            </a>
-         </div>
+  <div class="header__head-wrap">
+    <div class="header__head">
+      <button class="header__nav-button"><p class="visually-hidden">Открыть меню</p></button>
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__url" href="#">О нас</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__url" href="#">Оплата и доставка</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__url" href="#">Новости</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__url" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__personal">
+        <a class="header__personal-link" href="#">
+           <svg class="header__personal-icon" height="23" width="28"><use xlink:href="@img/icons/icons.svg#personal"></use></svg>
+          <p class="header__personal-text">Личный кабинет</p>
+        </a>
       </div>
-   </div>
-   <div class="hearer__additionally-wrap">
-      <div class="hearer__additionally">
-         <div class="hearer__logo">
-            <img src="@img/logo.png" alt="Ножи Zlatmax">
-         </div>
-         <form class="header__search-form" action="" method="get">
-            <input class="header__search" type="search" name="search" placeholder="Поиск">
-         </form>
-         <div class="header__location">
-            <img class="header__location-icons" width="17" height="25" src="@img/icons/icons.svg#location"/>
-            <p class="header__location-town">Москва</p>
-         </div>
-         <div class="header__call call">
-            <img class="call__expand-mob"  width="23" height="24" src="@img/icons/icons.svg#phone">
-            <div class="call-wrap">
-               <div class="call__numbers">
-                  <a class="call__number call__number-show" href="tel:88007774967">8-800-777-49-67</a>
-                  <a class="call__number" href="tel:88007774968">8-800-777-49-68</a>
-                  <a class="call__number" href="tel:88007774969">8-800-777-49-69</a>
-                  <button class="call__expand"><p class="visually-hidden">Показать все телефоны</p></button>
-               </div>
-               <button class="call__order">Заказать звонок</button>
-            </div>
-         </div>
-         <div class="header__favorites">
-            <a class="header__favorites-url" href="favorites.html">
-               <img class="header__favorites-icons" width="28" height="27" src="@img/icons/icons.svg#favorites"/>
-               <p class="visually-hidden">Избранное</p>
-            </a>
-         </div>
-         <div class="header__cart cart">
-            <a href="cart__url">
-               <div class="cart__icons-wrap">
-                  <img class="cart__icons" width="31" height="32" src="@img/icons/icons.svg#basket"/>
-                  <span class="cart__icons-number">0</span>
-               </div>
-               <div class="cart__info">
-                  <p class="cart__sum">0 р.</p>
-                  <p class="cart_text">Оформить заказ</p>
-               </div>
-            </a>
-         </div>
+    </div>
+  </div>
+  <div class="header__additionally-wrap">
+    <div class="header__additionally">
+      <div class="header__logo">
+        <img class="header__logo-picture" src="@img/logo.png" alt="Ножи Zlatmax" />
       </div>
-   </div>
-   <div class="hearer__catalog-wrap">
-      <div class="hearer__catalog catalog-header">
-         <div class="catalog-header__menu-item">
-            <p class="catalog-header__menu-name">Каталог ножей</p>
-            <div class="catalog-header__submenu">
-               <p class="catalog-header__submenu-name">Категория ножей</p>
-               <ul class="catalog-header__list">
-                  <li class="catalog-header__item">
-                     <a class="catalog-header__item-url" href="#">Разделочные ножи</a>
-                     <a class="catalog-header__item-url" href="#">Туристические ножи</a>
-                     <a class="catalog-header__item-url" href="#">Ножи охотничьи</a>
-                     <a class="catalog-header__item-url" href="#">Булатные ножи</a>
-                     <a class="catalog-header__item-url" href="#">Ножи из дамаска</a>
-                     <a class="catalog-header__item-url" href="#">Тактического назначения</a>
-                     <a class="catalog-header__item-url" href="#">Метательные ножи</a>
-                     <a class="catalog-header__item-url" href="#">Мачете и кукри</a>
-                     <a class="catalog-header__item-url" href="#">Ножи кухонные</a>
-                  </li>
-               </ul>
-               <a class="catalog-header__list-url" href="#">Смотреть все</a>
+      <form class="header__search-form" action="" method="get">
+         <svg class="header__search-icons" height="12" width="12"><use xlink:href="@img/icons/icons.svg#search"></use></svg>
+         <input
+          class="header__search"
+          type="search"
+          name="search"
+          placeholder="Поиск"
+        />
+      </form>
+      <div class="header__location">
+         <svg class="header__location-icons" height="25" width="17"><use xlink:href="@img/icons/icons.svg#location"></use></svg>
+        <p class="header__location-town">Москва</p>
+      </div>
+      <div class="header__call call" data-da=".header__head,860,2">
+        <svg class="call__expand-mob" width="23" height="24" viewBox="0 0 23 24" fill="" xmlns="http://www.w3.org/2000/svg">
+          <path d="M22.1494 17.7016L19.3231 14.718C18.5439 13.8955 17.276 13.8955 16.4969 14.718L15.2122 16.0742C14.6219 16.6973 13.6614 16.6971 13.0713 16.0744L7.50303 10.1912C6.91135 9.56663 6.91126 8.55568 7.50303 7.93097C7.70995 7.71254 8.30412 7.0853 8.78768 6.57483C9.56346 5.75593 9.5743 4.42163 8.78693 3.59053L5.96142 0.617157C5.18222 -0.205359 3.91435 -0.205359 3.13724 0.615001C2.55573 1.22353 2.36817 1.41984 2.10743 1.6927C-0.702453 4.65891 -0.702453 9.4853 2.10729 12.4514L10.93 21.77C13.7464 24.7432 18.3049 24.7435 21.1216 21.77L22.1494 20.6851C22.9286 19.8625 22.9286 18.5241 22.1494 17.7016ZM4.07727 1.61166C4.33699 1.33749 4.75954 1.33744 5.0201 1.61241L7.84561 4.58578C8.10595 4.86061 8.10595 5.30541 7.84561 5.58029L7.37453 6.07754L3.60863 2.10206L4.07727 1.61166ZM11.8722 20.7756L3.0495 11.457C0.875572 9.16205 0.756082 5.55854 2.68201 3.11292L6.43698 7.07686C5.45033 8.2576 5.49145 10.0568 6.56074 11.1856L12.1288 17.0685C12.1288 17.0685 12.1289 17.0686 12.129 17.0687C13.1971 18.1963 14.9014 18.2425 16.0212 17.1995L19.7763 21.1636C17.467 23.1932 14.0611 23.0863 11.8722 20.7756ZM21.2074 19.6906L20.7363 20.1879L16.9679 16.2098L17.4389 15.7125C17.6987 15.4383 18.1213 15.4383 18.3811 15.7125L21.2073 18.6961C21.4671 18.9703 21.4671 19.4164 21.2074 19.6906Z"/>
+        </svg>
+        <div class="call__wrap">
+          <div class="call__numbers">
+            <div class="call__numbers-wrap">
+              <a class="call__number" href="tel:88007774967">8-800-777-49-67</a>
+              <a class="call__number" href="tel:88007774968">8-800-777-49-68</a>
+              <a class="call__number" href="tel:88007774969">8-800-777-49-69</a>
             </div>
+            <button class="call__expand">
+              <svg class="call__expand-icons"><use xlink:href="@img/icons/icons.svg#arrow"></use></svg>
+              <p class="visually-hidden">Показать все телефоны</p>
+            </button>
+          </div>
+          <button class="call__order">Заказать звонок</button>
+        </div>
+      </div>
+      <div class="header__favorites" data-da=".header__head,860,5">
+        <a class="header__favorites-url" href="favorites.html">
+           <svg class="header__favorites-icons" height="27" width="28"><use xlink:href="@img/icons/icons.svg#favorites"></use></svg>
+            <p class="visually-hidden">Избранное</p>
+        </a>
+      </div>
+      <div class="header__cart cart" data-da=".header__head,860,4">
+        <a class="cart__url" href="#">
+          <div class="cart__icons-wrap">
+            <svg class="cart__icons" width="27" height="28"><use xlink:href="@img/icons/icons.svg#basket"></use></svg>
+            <span class="cart__icons-number">0</span>
+          </div>
+          <div class="cart__info">
+            <p class="cart__sum">0 р.</p>
+            <p class="cart__text">Оформить заказ</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="header__catalog-wrap">
+    <div class="header__catalog catalog-header">
+      <div class="catalog-header__menu-item">
+        <p class="catalog-header__menu-name">Каталог ножей</p>
+        <div class="catalog-header__submenu">
+          <p class="catalog-header__submenu-name">Категория ножей</p>
+          <ul class="catalog-header__list">
+            <li class="catalog-header__item">
+              <a class="catalog-header__item-url" href="#">Разделочные ножи</a>
+              <a class="catalog-header__item-url" href="#"
+                >Туристические ножи</a
+              >
+              <a class="catalog-header__item-url" href="#">Ножи охотничьи</a>
+              <a class="catalog-header__item-url" href="#">Булатные ножи</a>
+              <a class="catalog-header__item-url" href="#">Ножи из дамаска</a>
+              <a class="catalog-header__item-url" href="#"
+                >Тактического назначения</a
+              >
+              <a class="catalog-header__item-url" href="#">Метательные ножи</a>
+              <a class="catalog-header__item-url" href="#">Мачете и кукри</a>
+              <a class="catalog-header__item-url" href="#">Ножи кухонные</a>
+            </li>
+          </ul>
+          <a class="catalog-header__list-url" href="#">Смотреть все</a>
+        </div>
 
-            <div class="catalog-header__submenu">
-               <p class="catalog-header__submenu-name">Производство ножей</p>
-               <ul class="catalog-header__list">
-                  <li class="catalog-header__item">
-                     <a class="catalog-header__item-url" href="#">Ножи АИР</a>
-                     <a class="catalog-header__item-url" href="#">Ножи ЗИК</a>
-                     <a class="catalog-header__item-url" href="#">Ножи ЗЗОСС</a>
-                     <a class="catalog-header__item-url" href="#">Ножи РОСоружие</a>
-                     <a class="catalog-header__item-url" href="#">Ножи Оружейник</a>
-                     <a class="catalog-header__item-url" href="#">Булат Сергея Баранова</a>
-                     <a class="catalog-header__item-url" href="#">Булат Андрея Умерова</a>
-                     <a class="catalog-header__item-url" href="#">Ножи Златко</a>
-                     <a class="catalog-header__item-url" href="#">Ножи Стиль-М</a>
-                     <a class="catalog-header__item-url" href="#">Оружейная компания</a>
-                  </li>
-               </ul>
-               <a class="catalog-header__list-url" href="#">Смотреть все</a>
-            </div>
-         </div>
+        <div class="catalog-header__submenu">
+          <p class="catalog-header__submenu-name">Производство ножей</p>
+          <ul class="catalog-header__list">
+            <li class="catalog-header__item">
+              <a class="catalog-header__item-url" href="#">Ножи АИР</a>
+              <a class="catalog-header__item-url" href="#">Ножи ЗИК</a>
+              <a class="catalog-header__item-url" href="#">Ножи ЗЗОСС</a>
+              <a class="catalog-header__item-url" href="#">Ножи РОСоружие</a>
+              <a class="catalog-header__item-url" href="#">Ножи Оружейник</a>
+              <a class="catalog-header__item-url" href="#"
+                >Булат Сергея Баранова</a
+              >
+              <a class="catalog-header__item-url" href="#"
+                >Булат Андрея Умерова</a
+              >
+              <a class="catalog-header__item-url" href="#">Ножи Златко</a>
+              <a class="catalog-header__item-url" href="#">Ножи Стиль-М</a>
+              <a class="catalog-header__item-url" href="#"
+                >Оружейная компания</a
+              >
+            </li>
+          </ul>
+          <a class="catalog-header__list-url" href="#">Смотреть все</a>
+        </div>
       </div>
-   </div>
+    </div>
+  </div>
 </header>
