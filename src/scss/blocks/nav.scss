@@ -1,7 +1,70 @@
 .nav {
+   position: relative;
+
+   &__button-close {
+      position: absolute;
+      top: 32px;
+      right: 10px;
+      width: 20px;
+      height: 20px;
+      background-color: transparent;
+      transform: rotate(45deg);
+      &::before,
+      &::after {
+         content: '';
+         position: absolute;
+         width: 20px;
+         height: 2px;
+         background-color: #fff;
+      }
+      &::before {
+         top: 50%;
+         transform: translateX(-50%);
+      }
+      &::after {
+         left: 0;
+         transform: rotate(90deg);
+      }
+
+      @media(min-width: 861px) {
+         display: none;
+      }
+   }
+
+   &__button-back {
+      position: absolute;
+      top: 32px;
+      left: 20px;
+      display: none;
+      width: 82px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: right;
+      color: #fff;
+      background-color: transparent;
+
+      &::before {
+         content: '';
+         position: absolute;
+         top: 50%;
+         left: 0;
+         transform: translateY(-50%);
+         width: 16px;
+         height: 16px;
+         background-image: url('../img/icons/back.png');
+      }
+   }
+
    &__list {
       display: flex;
       gap: 0 60px;
+
+      @media(max-width: 860px) {
+         margin: 20px 0 0 20px;
+         flex-direction: column;
+         gap: 20px 0;
+      }
    }
 
    &__url {
@@ -15,6 +78,35 @@
    }
 
    @media(max-width: 860px) {
-      display: none;
+      position: fixed;
+      top: 0;
+      right: -288px;
+      width: 288px;
+      height: 100%;
+      transition-duration: 0.5s;
+      border: 1px solid #E8ECED;
+      background-color: #141414;
+      z-index: 2;
+
+      .nav__item--about-us {
+         order: 4;
+      }
+
+      .nav__item--delivery {
+         order: 3;
+      }
+
+      .nav__item--news {
+         order: 2;
+      }
+
+      .nav__item--contacts {
+         order: 1;
+      }
    }
+}
+
+.nav-active {
+   right: 0;
+   overflow: auto;
 }

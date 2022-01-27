@@ -8,6 +8,12 @@ callMenu.callExpand.addEventListener('click', callMenu.callMenuDesk);
 callMenu.callExpandMob.addEventListener('click', callMenu.callMenuMob);
 
 
+//Бургер меню мобильной версии
+import * as burgerMenu from "./modules/burger-menu.js";
+burgerMenu.headerNavButton.addEventListener('click', burgerMenu.openBurgerMenu);
+// burgerMenu.navButtonClose.addEventListener('click', burgerMenu.closeBurgerMenu);
+
+
 //Подключение динамического адаптива (перенос блоков в html)
 import {DynamicAdapt} from "./modules/dynamicAdapt.js";
 const da = new DynamicAdapt("max");
