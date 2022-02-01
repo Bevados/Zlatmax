@@ -9,7 +9,65 @@
   </head>
   <body>
     @@include('html/header.html' {})
-    <main></main>
+    <main>
+      <section class="about-shop">
+        <div class="about-shop__conteiner">
+          <div class="about-shop__description description-shop">
+            <ul class="description-shop__list">
+              <li class="description-shop__item">
+                <p class="description-shop__title">
+                  Интернет магазин сертифицированных <span>златоустовских ножей</span></p>
+                <p class="description-shop__text">Добро пожаловать на официальный сайт «ЗЛАТМАКС»! В нашем магазине представлен наиболее широкий выбор Златоустовских
+                  ножей от Златоустовских Оружейных Фабрик и компаний, мы являемся официальными поставщиками.</p>
+                <a class="description-shop__url" href="#">Подробнее</a>
+              </li>
+            </ul>
+            <div class="description-shop__switch switch-description">
+              <ul class="switch-description__list">
+                <li class="switch-description__item "></li>
+                <li class="switch-description__item switch-description__item--active"></li>
+                <li class="switch-description__item"></li>
+                <li class="switch-description__item"></li>
+              </ul>
+              <p class="switch-description__numbers"><span class="switch-description__number">01</span>/<span class="switch-description__amount">4</span></p>
+            </div>
+          </div>
+
+          <div class="about-shop__image image-shop">
+            <img class="image-shop__picture" src="../img/header/knife-set.png" alt="">
+            <div class="image-shop__hints hints-shop">
+              <button class="hints-shop__item"><p class="visually-hidden">Подсказка</p></button>
+              <button class="hints-shop__item"><p class="visually-hidden">Подсказка</p></button>
+              <button class="hints-shop__item"><p class="visually-hidden">Подсказка</p></button>
+              <ul class="hints-shop__block-list">
+                <li class="hints-shop__block-item">Добро пожаловать на официальный сайт «ЗЛАТМАКС»!</li>
+                <li class="hints-shop__block-item">Добро пожаловать на официальный сайт «ЗЛАТМАКС»!</li>
+                <li class="hints-shop__block-item">Добро пожаловать на официальный сайт «ЗЛАТМАКС»!</li>
+              </ul>
+            </div>
+          </div>
+
+          <ul class="about-shop__plus plus-shop">
+            <li class="plus-shop__item">
+              <img class="plus-shop__img" src="../img/icons/guarantee.png" width="64" height="64" alt="Гарантия возврата денег">
+              <p class="plus-shop__text">Гарантия 100% возврата денежных средств</p>
+            </li>
+            <li class="plus-shop__item">
+              <img class="plus-shop__img" src="../img/icons/delivery.png" width="91" height="60" alt="Доставка по странам">
+              <p class="plus-shop__text">Доставка по России, Казахстану и Белоруссии</p>
+            </li>
+            <li class="plus-shop__item">
+              <img class="plus-shop__img" src="../img/icons/registration.png" width="74" height="78" alt="Оформление заказа без регистрации">
+              <p class="plus-shop__text">Оформление заказа без регистрации.</p>
+            </li>
+            <li class="plus-shop__item">
+              <img class="plus-shop__img" src="../img/icons/sale.png" width="67" height="66" alt="Скидки покупателям">
+              <p class="plus-shop__text">Скидки постоянным покупателям. </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
     @@include('html/footer.html' {})
     <script src="js/app.min.js"></script>
   </body>

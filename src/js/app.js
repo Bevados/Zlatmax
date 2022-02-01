@@ -14,6 +14,15 @@ burgerMenu.headerNavButton.addEventListener('click', burgerMenu.openBurgerMenu);
 // burgerMenu.navButtonClose.addEventListener('click', burgerMenu.closeBurgerMenu);
 
 
+//Нажатие по кнопкам подсказкам (плюсы)
+import {openHintsBlock} from "./modules/header/hint.js";
+document.addEventListener('click', function(evt) {
+   if (evt.target.closest('.hints-shop__item')) {
+      openHintsBlock(evt);
+   }
+});
+
+
 //Подключение динамического адаптива (перенос блоков в html)
 import {DynamicAdapt} from "./modules/dynamicAdapt.js";
 const da = new DynamicAdapt("max");
