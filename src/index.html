@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.min.css" />
     <title>Document</title>
+    <h1>Интернет магазин сертифицированных златоустовских ножей</h1>
   </head>
   <body>
     @@include('html/header.html' {})
     <main>
       <section class="about-shop">
+        <h2 class="visually-hidden">О магазине</h2>
         <div class="about-shop__conteiner">
           <div class="about-shop__description description-shop">
             <ul class="description-shop__list">
@@ -66,6 +68,89 @@
             </li>
           </ul>
         </div>
+      </section>
+      <section class="additional-nav">
+        <h2 class="visually-hidden">Дополнительная навигация</h2>
+        <ul class="additional-nav__list">
+          <li class="additional-nav__item">
+            <div class="additional-nav__category">
+              <h3 class="additional-nav__title">Каталог ножей</h3>
+              <ul class="additional-nav__sublist">
+                <li class="additional-nav__subparagraph"><a class="additional-nav__url" href="#">Разделочные</a></li>
+                <li class="additional-nav__subparagraph"><a class="additional-nav__url" href="#">Туристические</a></li>
+                <li class="additional-nav__subparagraph"><a class="additional-nav__url" href="#">Охотничьи</a></li>
+              </ul>
+            </div>
+            <div class="additional-nav__image additional-nav__knife-catalog">
+              <img class="additional-nav__picture" src="img/header/knife-catalog.png" alt="">
+            </div>
+          </li>
+          <li class="additional-nav__item">
+            <div class="additional-nav__category">
+              <h3 class="additional-nav__title">Среднеклинковое оружие</h3>
+              <ul class="additional-nav__sublist">
+                <li class="additional-nav__subparagraph"><a class="additional-nav__url" href="#">Разделочные</a></li>
+                <li class="additional-nav__subparagraph"><a class="additional-nav__url" href="#">Туристические</a></li>
+                <li class="additional-nav__subparagraph"><a class="additional-nav__url" href="#">Охотничьи</a></li>
+              </ul>
+            </div>
+            <div class="additional-nav__image additional-nav__medium-bladed">
+              <img class="additional-nav__picture" src="img/header/medium-bladed.png" alt="">
+            </div>
+          </li>
+          <li class="additional-nav__item">
+            <div class="additional-nav__category">
+              <h3 class="additional-nav__title">Длинноклинковое оружие</h3>
+              <ul class="additional-nav__sublist">
+                <li class="additional-nav__subparagraph"><a class="additional-nav__url" href="#">Разделочные</a></li>
+                <li class="additional-nav__subparagraph"><a class="additional-nav__url" href="#">Туристические</a></li>
+                <li class="additional-nav__subparagraph"><a class="additional-nav__url" href="#">Охотничьи</a></li>
+              </ul>
+            </div>
+            <div class="additional-nav__image additional-nav__long-bladed">
+              <img class="additional-nav__picture" src="img/header/long-bladed.png" alt="">
+            </div>
+          </li>
+          <li class="additional-nav__item">
+            <div class="additional-nav__category">
+              <h3 class="additional-nav__title">Сувенирные изделия</h3>
+              <ul class="additional-nav__sublist">
+                <li class="additional-nav__subparagraph"><a class="additional-nav__url" href="#">Разделочные</a></li>
+                <li class="additional-nav__subparagraph"><a class="additional-nav__url" href="#">Туристические</a></li>
+                <li class="additional-nav__subparagraph"><a class="additional-nav__url" href="#">Охотничьи</a></li>
+              </ul>
+            </div>
+            <div class="additional-nav__image additional-nav__souvenir">
+              <img class="additional-nav__picture" src="img/header/souvenir.png" alt="">
+            </div>
+          </li>
+          <li class="additional-nav__item">
+            <div class="additional-nav__category">
+              <h3 class="additional-nav__title">Сопутствующие товары</h3>
+              <ul class="additional-nav__sublist">
+                <li class="additional-nav__subparagraph"><a class="additional-nav__url" href="#">Разделочные</a></li>
+                <li class="additional-nav__subparagraph"><a class="additional-nav__url" href="#">Туристические</a></li>
+                <li class="additional-nav__subparagraph"><a class="additional-nav__url" href="#">Охотничьи</a></li>
+              </ul>
+            </div>
+            <div class="additional-nav__image additional-nav__related">
+              <img class="additional-nav__picture" src="img/header/related.png" alt="">
+            </div>
+          </li>
+          <li class="additional-nav__item">
+            <div class="additional-nav__category">
+              <h3 class="additional-nav__title">Ножевая мастерская</h3>
+              <ul class="additional-nav__sublist">
+                <li class="additional-nav__subparagraph"><a class="additional-nav__url" href="#">Разделочные</a></li>
+                <li class="additional-nav__subparagraph"><a class="additional-nav__url" href="#">Туристические</a></li>
+                <li class="additional-nav__subparagraph"><a class="additional-nav__url" href="#">Охотничьи</a></li>
+              </ul>
+            </div>
+            <div class="additional-nav__image additional-nav__workshop">
+              <img class="additional-nav__picture" src="img/header/workshop.png" alt="">
+            </div>
+          </li>
+        </ul>
       </section>
     </main>
     @@include('html/footer.html' {})
