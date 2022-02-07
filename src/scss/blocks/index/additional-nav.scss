@@ -4,6 +4,10 @@
    max-width: 1619px;
    background-color: #fff;
 
+   @media (max-width: 700px) {
+      margin-bottom: 60px;
+   }
+
    // .additional-nav__list
    &__list {
       display: flex;

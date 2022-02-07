@@ -22,6 +22,11 @@ document.addEventListener('click', function(evt) {
    }
 });
 
+//Слайдер блока popular
+import * as popular from "./modules/header/popular.js";
+popular.startingPosition();
+let sliderShiftTimrer = setInterval(popular.sliderShift, 3000);
+
 
 //Подключение динамического адаптива (перенос блоков в html)
 import {DynamicAdapt} from "./modules/dynamicAdapt.js";
