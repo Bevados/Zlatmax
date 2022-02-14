@@ -38,10 +38,22 @@ blockNew.startingPosition();
 // let sliderNewTimrer = setInterval(blockNew.sliderShift, 3000);
 
 
-
+// Слушатель кнопок footer
+import {footerContent, switchClassActive} from "./modules/footer-button.js";
+footerContent.addEventListener('click', switchClassActive);
 
 
 //Подключение динамического адаптива (перенос блоков в html)
 import {DynamicAdapt} from "./modules/dynamicAdapt.js";
 const da = new DynamicAdapt("max");
 da.init();
+
+
+
+
+
+
+
+
+
+
