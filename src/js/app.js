@@ -14,6 +14,13 @@ burgerMenu.headerNavButton.addEventListener('click', burgerMenu.openBurgerMenu);
 // burgerMenu.navButtonClose.addEventListener('click', burgerMenu.closeBurgerMenu);
 
 
+//Слайдер блока about-shop
+import * as aboutShop from "./modules/header/about-shop-slider.js";
+aboutShop.initialSetup();
+window.addEventListener('resize', aboutShop.сalculationHeightBlockSlider);
+let intervalSliderAboutShop = setInterval(aboutShop.activeSlider, 5000);
+
+
 //Нажатие по кнопкам подсказкам (плюсы)
 import {openHintsBlock} from "./modules/header/hint.js";
 document.addEventListener('click', function(evt) {
@@ -32,24 +39,21 @@ let sliderShiftTimrer = setInterval(popular.sliderShift, 3000);
 // popular.startingPosition();
 // let sliderShiftTimrer = setInterval(function () {sliderShift(popular.sliderList, popular.sliderItem, popular.itemWidth, popular.columnGap)}, 3000);
 
+
+
 // Слайдер блока new
 import * as blockNew from "./modules/header/new.js";
 blockNew.startingPosition();
 // let sliderNewTimrer = setInterval(blockNew.sliderShift, 3000);
 
-
 // Слушатель кнопок footer
 import {footerContent, switchClassActive} from "./modules/footer-button.js";
 footerContent.addEventListener('click', switchClassActive);
-
 
 //Подключение динамического адаптива (перенос блоков в html)
 import {DynamicAdapt} from "./modules/dynamicAdapt.js";
 const da = new DynamicAdapt("max");
 da.init();
-
-
-
 
 
 
