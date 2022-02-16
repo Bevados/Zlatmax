@@ -68,14 +68,10 @@
       gap: 0 30px;
       min-height: 596px;
 
-      @media(max-width: 820px) {
+      @media(max-width: 700px) {
          min-height: 536px;
       }
    }
-}
-
-.slider-new__item {
-   top: 0;
 }
 
 .info-new {
@@ -143,6 +139,5 @@
       fill: $yellow;
    }
 }
-
 
 
